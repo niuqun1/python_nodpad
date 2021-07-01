@@ -42,4 +42,76 @@ num_fola = 3.141592653
 print(int(num_fola))
 num_5 = 5
 num_2 = 2
+# 算数运算符
 print(num_5 // num_2)
+
+# 格式化输入
+age =  25
+name = 'alix'
+weight = 142.5
+print('他的名字是%s他的年龄是%d他的体重是%f'%(name,age,weight))
+print(f"他的名字是{name}他的年龄是{age}他的体重是{weight}")
+print("他的名字是{}他的年龄是{}他的体重是{}".format(name,age,weight))
+
+# 算数运算符
+# +：加号运算符：
+num1 = 142
+num2 = 58
+str_num = "100"
+sun = num1+num2
+print(sun)
+
+# -：减号运算符：
+num1 = 142
+num2 = 58
+str_num = "100" 
+sun = num1 - num2
+print(sun)
+
+# *：乘号运算符。
+num1 = 142
+num2 = 58
+str_num = "100"
+sun = num1 * num2
+print(sun)
+
+# /：除法运算符：
+num1 = 142
+num2 = 58
+str_num = "100"
+sun = num1 / num2
+print(sun)
+
+
+# //：取整除：
+num1 = 142
+num2 = 58
+str_num = "100"
+sun = num1 // num2
+print(sun)
+
+
+# %：取余：
+num1 = 142
+num2 = 58
+str_num = "100"
+sun = num1 % num2
+print(sun)
+
+# **：幂运算：
+
+
+# +=：a+=1等价于a=a+1。
+
+# -=：a-=1等价于a=a-1。
+
+# *=：a*=2等价于a=a*2。
+
+# /=：a/=2等价于a=a/2。
+
+# %=：a%=2等价于a=a%2。
+
+# **=：a **= 2等价于a = a**2。
+
+# //=：a //= 2等价于a = a//2。
+
