@@ -130,11 +130,180 @@
 # print(a[4::2])
 # for  i in range(1,100):
 #     print(100 -i)
-a = []
-for i in range(1,101):
-    a.append(i)
-print(a[::4])
+# a = []
+# for i in range(1,101):
+#     a.append(i)
+# print(a[::3])
+# 函数式编程练习：
+# 练习filter函数：使用filter函数过滤掉小于3的数：
+# from os import name
 
 
+from os import name
+
+
+a = [1,2,3,4,5,6,7,8,1,2,1,2]
+# data = filter(lambda x:x>3,a)
+# for i in data:
+#     print(i)
+
+
+# 练习map函数：使用map函数将以下数组中所有的数都扩大10倍：
+
+#  a = [1,2,3,4,5,6]
+# data = map(lambda x:x*10,a)
+# for i in data:
+#     print(i)
+
+# 练习reduce函数：使用reduce函数求以下列表中数值之和：
+
+# from functools import reduce
+# from functools import reduce
+# data = reduce(lambda x,y:x+y,a)
+# print(data)
+
+# 实现一个复制图片功能的程序：
+# 用户输入图片的地址和名字，以及指定的图片。
+# def cp_jpeg(file,cp_file):
+#     with open(file,"rb") as fp:
+#         with open(cp_file,"wb") as fp1:
+#             fp1.write(fp.read())
+# cp_jpeg("12.jpeg","cp_12.jpeg")
+
+
+# 实现一个宠物寄养管理系统，要求如下：
+# 1. 需要使用函数来模块化。
+# 2. 宠物的信息包括：宠物编号/宠物名称/宠物种类/一天的价格。
+# 3. 需要实现：添加/查找/删除/退出程序的功能。
+# 4. 要求使用文件来存储信息，下次打开系统，数据依然存在。
+# 1 写入函数、
+# data_list = [{'id': '3', 'name': '牛群'}]
+# def write_Data(data):
+#     with open("data.txt","w") as fp:
+#         fp.writelines(data)
+# write_Data(data_list)
+# # # 2增
+# def add_data(name,id):
+#     data_list=read_data()
+#     data_dic = {}
+#     data_dic["id"] = id 
+#     data_dic["name"] = name
+#     data_list.append(data_dic)
+#     write_Data(data_list)
+#     print("写入成功")
+# # 3改
+# def updata_data(data,new_Data):
+#     for i in data_list:
+#         if i["id"] == data:
+#             i["name"] = new_Data
+#     write_Data(data_list)
+        
+# # 4查
+# def find_data(data,new_Data):
+#     for i in data_list:
+#         if i["id"] == data:
+#             print(i)
+# # 5读取数据
+# def read_data():
+#     with open("data.txt","r") as fp:
+#         data = fp.read()
+#     global data_list
+#     data_list = data
+#     return    data_list
+# print(type(read_data()))
+
+    
+
+
+# 实现一个密码存储系统：
+# 1. 可以存储某个产品的用户名和密码。
+# 2. 产品名字和用户名以及密码都必须为英文。
+# 3. 提示：可以使用ord函数将英文字符转换为ascii码。
+# 用面向对象思想重写宠物寄养管理系统
+
+
+data = []
+
+def add_pet():
+    id = input("请输入用户id")
+    name = input("请输入用户名称")
+    user = {}
+    user["id"] = id
+    user["name"] = name
+    data.append(user)
+
+    print("用户添加成功")
+
+
+
+def updata_pet():
+    user_id = input("请输入要修改用户id")
+    user_name= input("请输入要更改的名字")
+
+    for i in data:
+        if i["id"] == user_id:
+            i["name"] == user_name
+def sava_pet():
+    with open("data.txt","w") as fp:
+        links = []
+        for i in data:
+            text = f"{i['id']}/{i['name']}\n"
+            links.append(text)
+        fp.writelines(links)
+
+def find_pet():
+    user_id = input("请输入要查询用户id")
+
+    for i in data:
+        if i["id"] == user_id:
+            print("用户id{},用户名称{}".format(i["id"],i["name"]))
+
+def delect_pet():
+    user_id = input("请输入要删除用户id")
+    for i in data:  
+        if i["id"] == user_id:
+            data.remove(i)
+def get_sava_data():
+    with open("data.txt","r")as fp:
+        for i in fp:
+            text = i.split("/")
+            id = text[0]
+            name = text[1]
+            print("用户id{},用户名称{}".format(id,name))
+def get_data():
+    with open("data.txt","r")as fp:
+        for i in fp:
+            text = i.split("/")
+            id = text[0]
+            name = text[1]
+            data.append({"id":id,"name":name})
+get_data()
+
+while True:
+    user_data = input("请输入选择项") 
+    if user_data == "1":
+        add_pet()
+        sava_pet()
+
+    elif user_data == "2":
+        updata_pet()
+
+    elif user_data == "3":
+        sava_pet()
+        
+    elif user_data == "4":
+        find_pet()
+
+    elif user_data == "5":
+        delect_pet()
+
+    elif user_data == "6":
+        sava_pet()
+        break
+    elif user_data == "7":
+         get_sava_data()
+    else:
+        print("请输入合法数据")
+    
 
 

@@ -8,4 +8,3 @@ def adds(*args):
         i+=i
     return i
 print(adds(1,2,3))
-
