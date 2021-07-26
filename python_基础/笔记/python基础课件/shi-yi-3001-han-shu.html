@@ -1,0 +1,572 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>十、函数 | Python3基础课件</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="shi-er-3001-wen-jian-cao-zuo.html" />
+    
+    
+    <link rel="prev" href="jiu-3001-zi-dian.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="10"
+        data-chapter-title="十、函数"
+        data-filepath="shi-yi-3001-han-shu.md"
+        data-basepath="."
+        data-revision="Tue Jul 16 2019 14:05:20 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1.html">
+            
+                
+                    <a href="chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        一、认识Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="er-3001-xiang-guan-ruan-jian-an-zhuang.html">
+            
+                
+                    <a href="er-3001-xiang-guan-ruan-jian-an-zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        二、相关软件安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="san-3001-yun-suan-fu.html">
+            
+                
+                    <a href="san-3001-yun-suan-fu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        三、Python入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="si-3001-if-yu-ju.html">
+            
+                
+                    <a href="si-3001-if-yu-ju.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        四、分支语句
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="wu-3001-xun-huan.html">
+            
+                
+                    <a href="wu-3001-xun-huan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        五、循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="liu-3001-zi-fu-chuan.html">
+            
+                
+                    <a href="liu-3001-zi-fu-chuan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        六、字符串
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="qi-3001-lie-biao.html">
+            
+                
+                    <a href="qi-3001-lie-biao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        七、列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="ba-3001-yuan-zu.html">
+            
+                
+                    <a href="ba-3001-yuan-zu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        八、元组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="jiu-3001-zi-dian.html">
+            
+                
+                    <a href="jiu-3001-zi-dian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        九、字典
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="10" data-path="shi-yi-3001-han-shu.html">
+            
+                
+                    <a href="./shi-yi-3001-han-shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        十、函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="shi-er-3001-wen-jian-cao-zuo.html">
+            
+                
+                    <a href="shi-er-3001-wen-jian-cao-zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        十一、文件操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="shi-san-3001-mian-xiang-dui-xiang-ff08-1.html">
+            
+                
+                    <a href="shi-san-3001-mian-xiang-dui-xiang-ff08-1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        十二、面向对象（1）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="shi-si-3001-mian-xiang-dui-xiang-ff08-2.html">
+            
+                
+                    <a href="shi-si-3001-mian-xiang-dui-xiang-ff08-2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        十三、面向对象（2）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="shi-wu-3001-zuo-ye.html">
+            
+                
+                    <a href="shi-wu-3001-zuo-ye.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        十四、作业
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="shi-liu-3001-yi-chang-chu-li.html">
+            
+                
+                    <a href="shi-liu-3001-yi-chang-chu-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        十五、异常处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="shi-qi-3001-mo-kuai.html">
+            
+                
+                    <a href="shi-qi-3001-mo-kuai.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        十六、模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="shi-ba-3001-zhi-shi-dian-bu-chong.html">
+            
+                
+                    <a href="shi-ba-3001-zhi-shi-dian-bu-chong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        十七、知识点补充
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="" >Python3基础课件</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="python&#x57FA;&#x7840;&#x51FD;&#x6570;">Python&#x57FA;&#x7840;-&#x51FD;&#x6570;</h1>
+<h3 id="&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x51FD;&#x6570;&#xFF1A;">&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x51FD;&#x6570;&#xFF1A;</h3>
+<p>&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x8981;&#x5728;&#x8BB8;&#x591A;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x91C7;&#x7528;&#x4F20;&#x7EDF;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x76F4;&#x91CD;&#x590D;&#x7F16;&#x5199;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x4EE3;&#x7801;&#x5C06;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x7CDF;&#x7CD5;&#xFF0C;&#x5E76;&#x4E14;&#x975E;&#x5E38;&#x96BE;&#x4EE5;&#x7EF4;&#x62A4;&#x3002;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x6765;&#x628A;&#x4E00;&#x4E9B;&#x91CD;&#x590D;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x5C01;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x540E;&#x8981;&#x518D;&#x8C03;&#x7528;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x53EA;&#x8981;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<h3 id="&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x548C;&#x8C03;&#x7528;&#xFF1A;">&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x548C;&#x8C03;&#x7528;&#xFF1A;</h3>
+<ol>
+<li>&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#xFF1A;&#x8BED;&#x6CD5;&#x662F;&#x4F7F;&#x7528;<code>def</code>&#xFF1A;<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> &#x51FD;&#x6570;&#x540D;<span class="hljs-params">(&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;)</span>:</span>
+     &#x4EE3;&#x7801;&#x5757;
+ <span class="hljs-comment"># &#x793A;&#x4F8B;&#xFF1A;</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">()</span>:</span>
+     print(<span class="hljs-string">&apos;hello world&apos;</span>)
+</code></pre>
+</li>
+<li>&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF1A;&#x8BED;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x540E;&#x9762;&#x518D;&#x7ED9;&#x4E2A;&#x5706;&#x62EC;&#x53F7;&#xFF1A;<pre><code class="lang-python"> &#x51FD;&#x6570;&#x540D;(&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;)
+ <span class="hljs-comment"># &#x793A;&#x4F8B;&#xFF1A;</span>
+ greet()
+</code></pre>
+</li>
+<li><p>&#x51FD;&#x6570;&#x53C2;&#x6570;&#xFF1A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x8FDB;&#x53BB;&#x7ED9;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(a,b)</span>:</span>
+     print(a+b)
+</code></pre>
+<ul>
+<li><p>&#x5F62;&#x53C2;&#xFF1A;&#x5C31;&#x662F;&#x5728;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+</li>
+<li><p>&#x5B9E;&#x53C2;&#xFF1A;&#x5C31;&#x662F;&#x5728;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x4F20;&#x9012;&#x8FDB;&#x53BB;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+</li>
+<li><p>&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF1A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x5C31;&#x662F;&#x6309;&#x7167;&#x5F62;&#x53C2;&#x4E2D;&#x7ED9;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#x7684;&#x987A;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(a,b)</span>:</span>
+     print(a+b)
+ <span class="hljs-comment"># &#x8C03;&#x7528;add</span>
+ add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)
+</code></pre>
+<p>&#x5728;&#x4E0A;&#x4F8B;&#x4E2D;&#xFF0C;&#x8C03;&#x7528;add&#x51FD;&#x6570;&#xFF0C;&#x7ED9;&#x7684;&#x503C;a&#x4E3A;1&#xFF0C;b&#x4E3A;2&#x3002;&#x8FD9;&#x79CD;&#x4F4D;&#x7F6E;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x53C2;&#x6570;&#x53EB;&#x505A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x3002;</p>
+</li>
+<li><p>&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF1A;&#x5728;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x5F62;&#x53C2;&#x7684;&#x540D;&#x5B57;&#x7ED9;&#x5B9A;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(a,b)</span>:</span>
+     print(a + b)
+ <span class="hljs-comment"># &#x8C03;&#x7528;add</span>
+ add(a=<span class="hljs-number">1</span>,b=<span class="hljs-number">2</span>)
+ <span class="hljs-comment"># &#x8C03;&#x6362;a&#x548C;b&#x53C2;&#x6570;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x8C03;&#x7528;add&#x51FD;&#x6570;</span>
+ add(b=<span class="hljs-number">1</span>,a=<span class="hljs-number">2</span>)
+</code></pre>
+</li>
+<li><p>*args&#x548C;**kwargs&#xFF1A;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x7684;&#x662F;&#x7F3A;&#x7701;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-python">   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(*args,**kwargs)</span>:</span>
+       print(args)
+       print(kwargs)
+   <span class="hljs-comment"># &#x8C03;&#x7528;add</span>
+   add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,a=<span class="hljs-number">3</span>,b=<span class="hljs-number">4</span>)
+</code></pre>
+<p>&#x5176;&#x4E2D;1&#x548C;2&#x662F;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x4F1A;&#x4FDD;&#x5B58;&#x5728;<code>args</code>&#x4E2D;&#xFF0C;a=3,b=4&#x662F;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;<code>kwargs</code>&#x4E2D;&#x3002;<br>   &#x4F20;&#x9012;&#x5230;&#x51FD;&#x6570;&#x4E2D;&#x7684;args&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#xFF0C;kwargs&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#x3002;</p>
+</li>
+<li><p>&#x5143;&#x7EC4;&#x548C;&#x5B57;&#x5178;&#x62C6;&#x5206;&#x51FA;&#x6765;&#x6210;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x548C;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"> a = (<span class="hljs-string">&apos;a&apos;</span>,<span class="hljs-string">&apos;b&apos;</span>,<span class="hljs-string">&apos;c&apos;</span>)
+ b = {<span class="hljs-string">&quot;username&quot;</span>:<span class="hljs-string">&quot;zhiliao&quot;</span>,<span class="hljs-string">&quot;age&quot;</span>:<span class="hljs-number">18</span>}
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">(*args,**kwargs)</span>:</span>
+     print(args)
+     print(kwargs)
+ greet(*a,**b) <span class="hljs-comment"># &#x5C06;a&#x8FD9;&#x4E2A;&#x5143;&#x7EC4;&#x4E2A;&#x7684;&#x5143;&#x7D20;&#x4E00;&#x4E2A;&#x4E2A;&#x62C6;&#x5F00;&#x6765;&#x7ED9;`args`&#xFF0C;&#x5C06;`b`&#x62C6;&#x5F00;&#x6765;&#x4E00;&#x4E2A;&#x4E2A;&#x7ED9;`kwargs`</span>
+</code></pre>
+</li>
+<li><p>&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#xFF1A;&#x6709;&#x65F6;&#x5019;&#x4E00;&#x4E9B;&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7ED9;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-python">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">(name,age=<span class="hljs-number">18</span>)</span>:</span>
+      print(name,age)
+  greet(<span class="hljs-string">&apos;zhiliao&apos;</span>) <span class="hljs-comment">#age&#x5C06;&#x4F7F;&#x7528;18&#x6765;&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;</span>
+  greet(<span class="hljs-string">&apos;zhiliao&apos;</span>,age=<span class="hljs-number">20</span>) <span class="hljs-comment">#age&#x5C06;&#x4F7F;&#x7528;20&#x6765;&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;</span>
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x4E00;&#x5B9A;&#x8981;&#x653E;&#x5728;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#x7684;&#x540E;&#x9762;&#xFF0C;&#x4F46;&#x662F;&#x653E;&#x5728;&#x7F3A;&#x7701;&#x53C2;&#x6570;&#x7684;&#x524D;&#x9762;&#x3002;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#xFF1A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(a,b)</span>:</span>
+     <span class="hljs-keyword">return</span> a + b
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5143;&#x7EC4;&#x6765;&#x8FD4;&#x56DE;&#x591A;&#x4E2A;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;zhiliao&apos;</span>,<span class="hljs-number">18</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="&#x51FD;&#x6570;&#x4E2D;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF1A;">&#x51FD;&#x6570;&#x4E2D;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF1A;</h3>
+<ol>
+<li>&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF1A;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x80FD;&#x5728;&#x5916;&#x9762;&#x4F7F;&#x7528;&#x3002;<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">()</span>:</span>
+     name = <span class="hljs-string">&apos;zhiliao&apos;</span>
+     print(<span class="hljs-string">&apos;my name is %s&apos;</span>%name)
+ print(name) <span class="hljs-comment"># &#x62A5;&#x9519;&#xFF0C;&#x56E0;&#x4E3A;name&#x53EA;&#x5728;greet&#x51FD;&#x6570;&#x4E2D;&#x6709;&#x7528;</span>
+</code></pre>
+</li>
+<li>&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF1A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x662F;&#x5728;&#x51FD;&#x6570;&#x6216;&#x8005;&#x67D0;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x5916;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x3002;<pre><code class="lang-python"> username = <span class="hljs-string">&apos;zhiliao&apos;</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">()</span>:</span>
+     print(<span class="hljs-string">&apos;my name is %s&apos;</span> % username)
+ greet()
+</code></pre>
+</li>
+<li><code>global</code>&#x5173;&#x952E;&#x5B57;&#xFF1A;&#x5982;&#x679C;&#x60F3;&#x5728;&#x51FD;&#x6570;&#x6216;&#x8005;&#x67D0;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>global</code>&#x5173;&#x952E;&#x5B57;&#x3002;<pre><code class="lang-python"> username = <span class="hljs-string">&apos;zhiliao&apos;</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">greet</span><span class="hljs-params">()</span>:</span>
+     username = <span class="hljs-string">&apos;ketang&apos;</span> <span class="hljs-comment"># &#x6B64;&#x65F6;&#x4E0D;&#x662F;&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x53D8;&#x91CF;username&#xFF0C;&#x800C;&#x662F;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4E0E;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x76F8;&#x540C;&#x540D;&#x5B57;&#x7684;&#x53D8;&#x91CF;</span>
+     print(<span class="hljs-string">&apos;my name is %s&apos;</span> % username)
+ greet()
+ print(usernmae) <span class="hljs-comment"># &#x8FD9;&#x65F6;&#x5019;username&#x4ECD;&#x7136;&#x662F;`zhiliao`&#x3002;</span>
+</code></pre>
+</li>
+<li><p>&#x5217;&#x8868;&#x548C;&#x5B57;&#x5178;&#x5F53;&#x4F5C;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF1A;&#x5217;&#x8868;&#x548C;&#x5B57;&#x5178;&#x5F53;&#x4F5C;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5728;&#x51FD;&#x6570;&#x6216;&#x8005;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;&#x5217;&#x8868;&#x548C;&#x5B57;&#x5178;&#x7684;&#x503C;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x503C;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x52A0;<code>global</code>&#x5173;&#x952E;&#x5B57;&#x3002;</p>
+<pre><code class="lang-python"> persons = [<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-string">&apos;lisi&apos;</span>]
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_person</span><span class="hljs-params">(name)</span>:</span>
+     persons.append(name)
+ add_person(<span class="hljs-string">&apos;wangwu&apos;</span>)
+ print(persons) <span class="hljs-comment"># &#x8FD9;&#x65F6;&#x5019;persons&#x5DF2;&#x7ECF;&#x53D8;&#x6210;[&apos;zhangsan&apos;,&apos;lisi&apos;,&apos;wangwu&apos;]&#x4E86;&#x3002;</span>
+</code></pre>
+<p>&#x800C;&#x5982;&#x679C;&#x4F60;&#x76F4;&#x63A5;&#x4FEE;&#x6539;persons&#x7684;&#x6307;&#x5411;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x4F7F;&#x7528;<code>global</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x505A;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5C06;&#x662F;&#x5728;&#x672C;&#x5730;&#x7533;&#x8BF7;&#x4E00;&#x4E2A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-python"> persons = [<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-string">&apos;lisi&apos;</span>]
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_person</span><span class="hljs-params">()</span>:</span>
+     persons = [<span class="hljs-string">&apos;wangwu&apos;</span>]
+ add_person()
+ print(persons) <span class="hljs-comment"># &#x4ECD;&#x7136;&#x662F;&apos;zhangsan&apos;&#x548C;`lisi`</span>
+</code></pre>
+</li>
+</ol>
+<h3 id="&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF1A;">&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF1A;</h3>
+<ol>
+<li><p>&#x5217;&#x8868;&#x6392;&#x5E8F;<code>sort</code>&#xFF1A;&#x4F7F;&#x7528;<code>sort</code>&#x7ED9;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;&#x65F6;&#x5019;&#x3002;&#x5982;&#x679C;&#x5217;&#x8868;&#x4E2D;&#x88C5;&#x7684;&#x662F;&#x5B57;&#x5178;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x7684;&#x6392;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-python"> l = [{<span class="hljs-string">&apos;username&apos;</span>:<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-string">&apos;age&apos;</span>:<span class="hljs-number">18</span>},{<span class="hljs-string">&quot;username&quot;</span>:<span class="hljs-string">&apos;lisi&apos;</span>,<span class="hljs-string">&apos;age&apos;</span>:<span class="hljs-number">20</span>}]
+ l.sort()
+</code></pre>
+<p>&#x6B63;&#x786E;&#x7684;&#x5199;&#x6CD5;&#x5E94;&#x8BE5;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-python"> l = [{<span class="hljs-string">&apos;username&apos;</span>:<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-string">&apos;age&apos;</span>:<span class="hljs-number">18</span>},{<span class="hljs-string">&quot;username&quot;</span>:<span class="hljs-string">&apos;lisi&apos;</span>,<span class="hljs-string">&apos;age&apos;</span>:<span class="hljs-number">20</span>}]
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sort_key</span><span class="hljs-params">(x)</span>:</span>
+     <span class="hljs-keyword">return</span> x[<span class="hljs-string">&apos;age&apos;</span>] <span class="hljs-comment"># &#x6839;&#x636E;&#x5E74;&#x9F84;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</span>
+ l.sort(key=sort_key)
+</code></pre>
+</li>
+<li><p>&#x4EE5;&#x4E0A;&#x662F;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x4F5C;&#x4E3A;<code>key</code>&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;<code>key</code>&#x7684;&#x51FD;&#x6570;&#x53EA;&#x9700;&#x8981;&#x7528;&#x4E00;&#x6B21;&#xFF0C;&#x4EE5;&#x540E;&#x518D;&#x4E5F;&#x7528;&#x4E0D;&#x5230;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x4E00;&#x822C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x5373;<code>lambda</code>&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x597D;&#x7684;&#x5B8C;&#x6210;&#x6211;&#x4EEC;&#x7684;&#x9700;&#x6C42;&#xFF1A;</p>
+<pre><code class="lang-python"> l = [{<span class="hljs-string">&apos;username&apos;</span>:<span class="hljs-string">&apos;zhangsan&apos;</span>,<span class="hljs-string">&apos;age&apos;</span>:<span class="hljs-number">18</span>},{<span class="hljs-string">&quot;username&quot;</span>:<span class="hljs-string">&apos;lisi&apos;</span>,<span class="hljs-string">&apos;age&apos;</span>:<span class="hljs-number">20</span>}]
+ l.sort(key=<span class="hljs-keyword">lambda</span> x:x[<span class="hljs-string">&apos;age&apos;</span>])
+</code></pre>
+</li>
+<li><p>&#x81EA;&#x5DF1;&#x52A8;&#x624B;&#x5199;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF1A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6A21;&#x8303;<code>python</code>&#x81EA;&#x5E26;&#x7684;<code>sort</code>&#x51FD;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x505A;&#x8BA1;&#x7B97;&#x5668;&#x8FD0;&#x7B97;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x8BA9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x503C;&#xFF0C;&#x548C;&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate</span><span class="hljs-params">(x,y,func)</span>:</span>
+     <span class="hljs-keyword">return</span> func(x,y)
+
+ <span class="hljs-comment"># &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x52A0;&#x6CD5;&#x8BA1;&#x7B97;&#x5668;</span>
+ calculate(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-keyword">lambda</span> x,y:x+y)
+ <span class="hljs-comment"># &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51CF;&#x6CD5;&#x8BA1;&#x7B97;&#x5668;</span>
+ calculate(<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-keyword">lambda</span> x,y:x-y)
+ <span class="hljs-comment"># &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x4E58;&#x6CD5;&#x8BA1;&#x7B97;&#x5668;</span>
+ calculate(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-keyword">lambda</span> x,y:x*y)
+ <span class="hljs-comment"># &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x9664;&#x6CD5;&#x8BA1;&#x7B97;&#x5668;</span>
+ calculate(<span class="hljs-number">4</span>,<span class="hljs-number">2</span>,<span class="hljs-keyword">lambda</span> x,y:x/y)
+</code></pre>
+</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="jiu-3001-zi-dian.html" class="navigation navigation-prev " aria-label="Previous page: 九、字典"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="shi-er-3001-wen-jian-cao-zuo.html" class="navigation navigation-next " aria-label="Next page: 十一、文件操作"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

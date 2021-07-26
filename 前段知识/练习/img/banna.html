@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  .banna{
+    width: 590px;
+    height: 470px;
+    position: relative;
+    margin: auto;
+  }
+
+  .img-box{
+    width: 790px;
+    height: 470px;
+    overflow: hidden;
+
+  }
+  img{
+     position: absolute;
+  }
+  /*.paging{*/
+  /*   width: 590px;*/
+  /*  height: 470px;*/
+  /*  position: relative;*/
+  /*  margin: auto;*/
+  /*  float: left;*/
+  /*}*/
+
+  .paging div{
+    width: 70px;
+    height: 100px;
+    font-size: 40px;
+    color: #fdffff;
+    background-color: rgba(0,0,0,.15);
+    text-align: center;
+    border-radius: 54px;
+    padding-top:  41px;
+    position: absolute;
+    top: 154px;
+    z-index: 9;
+
+  }
+    .next{
+    left: 0px;
+
+  }
+  .top {
+    right: 0px;
+  }
+  .btn {
+
+    position: absolute;
+    bottom: 20px;
+    left: 230px;
+    z-index: 9;
+
+  }
+  li{
+      float: left;
+    width: 19px;
+    height: 19px;
+    bottom: 20px;
+
+  }
+/*.btn{*/
+/*   position: absolute;*/
+/*    bottom: 20px;*/
+/*    color: red;*/
+/*    left: 220px;*/
+/*  z-index: 9;*/
+/*}*/
+
+
+</style>
+<body>
+<div class="banna">
+  <div class="img-box">
+    <img src="q.jpeg" height="470" width="590" >
+    <img src="2.jpeg" style="z-index: 2"  height="470" width="590" >
+    <img src="3.jpeg"  height="470" width="590" >
+
+</div>
+<div class="paging">
+  <div class="next">&lt;</div>
+  <div class="top">&gt;</div>
+</div>
+<div class="btn">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  *{
+    margin-bottom: 0px;
+  }
+
+  .bannar{
+    width: 590px;
+    height: 470px;
+    /*position: absolute;*/
+    left: 31%;
+  }
+
+  .img-box{
+    width: 590px;
+    height: 470px;
+    /*overflow: hidden;*/
+    position: relative;
+    margin: auto;
+  }
+  .next,.top{
+    width: 70px;
+    height: 100px;
+    font-size: 40px;
+    color: #fdffff;
+    background-color: rgba(0,0,0,.15);
+    text-align: center;
+    border-radius: 54px;
+    padding-top:  41px;
+    position: absolute;
+    top: 153px;
+  }
+  .top{
+    left: 0px;
+
+  }
+  .next{
+    right: 0px;
+
+
+  }
+
+  .btn li{
+    float: left;
+    width: 19px;
+    height: 19px;
+
+  }
+.btn{
+   position: absolute;
+    bottom: 20px;
+    color: red;
+    left: 220px;
+}
+
+
+</style>
+<body>
+
+<div class="bannar">
+  <div class="img-box">
+    <img src="./img/q.jpeg" width="590"  height="470">
+    <img src="./img/2.jpeg"  width="590"  height="470">
+    <img style="z-index: 9"  src="./img/3.jpeg" width="590" height="470">
+  </div>
+  <div class="paging">
+    <div class="top">&lt;</div>
+    <div class="next">&gt;</div>
+  </div>
+  <ul class="btn">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+</body>
+</html>

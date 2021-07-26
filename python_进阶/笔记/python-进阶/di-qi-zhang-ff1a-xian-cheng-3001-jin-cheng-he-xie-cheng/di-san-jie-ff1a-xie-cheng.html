@@ -1,0 +1,602 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第三节：协程（待更新） | 知了课堂Python进阶课程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-er-jie-ff1a-xian-cheng.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="7.3"
+        data-chapter-title="第三节：协程（待更新）"
+        data-filepath="di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-san-jie-ff1a-xie-cheng.md"
+        data-basepath=".."
+        data-revision="Thu Jun 27 2019 10:26:59 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1.html">
+            
+                
+                    <a href="../chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一章：虚拟环境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="di-er-zhang-ff1a-shen-kao-bei-he-qian-kao-bei.html">
+            
+                
+                    <a href="../di-er-zhang-ff1a-shen-kao-bei-he-qian-kao-bei.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二章：生成器和迭代器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="di-er-zhang-ff1a-shen-kao-bei-he-qian-kao-bei/di-yi-jie-ff1a-die-dai-qi.html">
+            
+                
+                    <a href="../di-er-zhang-ff1a-shen-kao-bei-he-qian-kao-bei/di-yi-jie-ff1a-die-dai-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        第一节：迭代器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="di-er-zhang-ff1a-shen-kao-bei-he-qian-kao-bei/di-yi-jie-ff1a-sheng-cheng-qi.html">
+            
+                
+                    <a href="../di-er-zhang-ff1a-shen-kao-bei-he-qian-kao-bei/di-yi-jie-ff1a-sheng-cheng-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        第二节：生成器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="di-er-zhang-ff1a-zhuang-shi-qi.html">
+            
+                
+                    <a href="../di-er-zhang-ff1a-zhuang-shi-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三章：装饰器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="di-er-zhang-ff1a-zhuang-shi-qi/di-yi-jie-ff1a-bi-bao.html">
+            
+                
+                    <a href="../di-er-zhang-ff1a-zhuang-shi-qi/di-yi-jie-ff1a-bi-bao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        第一节：闭包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="di-er-zhang-ff1a-zhuang-shi-qi/di-er-jie-ff1a-zhuang-shi-qi.html">
+            
+                
+                    <a href="../di-er-zhang-ff1a-zhuang-shi-qi/di-er-jie-ff1a-zhuang-shi-qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        第二节：装饰器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="di-si-zhang-ff1a-mian-xiang-dui-xiang-jin-jie.html">
+            
+                
+                    <a href="../di-si-zhang-ff1a-mian-xiang-dui-xiang-jin-jie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四章：面向对象进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="di-si-zhang-ff1a-mian-xiang-dui-xiang-jin-jie/di-yi-jie-ff1a-dong-tai-tian-jia-fang-fa.html">
+            
+                
+                    <a href="../di-si-zhang-ff1a-mian-xiang-dui-xiang-jin-jie/di-yi-jie-ff1a-dong-tai-tian-jia-fang-fa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        第一节：动态属性添加方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="di-si-zhang-ff1a-mian-xiang-dui-xiang-jin-jie/di-er-jie-ff1a-yuan-lei.html">
+            
+                
+                    <a href="../di-si-zhang-ff1a-mian-xiang-dui-xiang-jin-jie/di-er-jie-ff1a-yuan-lei.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        第二节：元类
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="di-wu-zhang-ff1a-nei-cun-guan-li.html">
+            
+                
+                    <a href="../di-wu-zhang-ff1a-nei-cun-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五章：内存管理
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="di-wu-zhang-ff1a-nei-cun-guan-li/di-yi-jie-ff1a-dui-xiang-chi.html">
+            
+                
+                    <a href="../di-wu-zhang-ff1a-nei-cun-guan-li/di-yi-jie-ff1a-dui-xiang-chi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        第一节：对象池
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="di-wu-zhang-ff1a-nei-cun-guan-li/di-yi-jie-ff1a-dui-xiang-chi/di-er-jie-ff1a-nei-cun-guan-li-ji-zhi.html">
+            
+                
+                    <a href="../di-wu-zhang-ff1a-nei-cun-guan-li/di-yi-jie-ff1a-dui-xiang-chi/di-er-jie-ff1a-nei-cun-guan-li-ji-zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        第二节：垃圾回收机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="di-wu-zhang-ff1a-nei-cun-guan-li/di-yi-jie-ff1a-dui-xiang-chi/di-er-jie-ff1a-nei-cun-guan-li-ji-zhi/di-san-jie-ff1a-gc-mo-kuai.html">
+            
+                
+                    <a href="../di-wu-zhang-ff1a-nei-cun-guan-li/di-yi-jie-ff1a-dui-xiang-chi/di-er-jie-ff1a-nei-cun-guan-li-ji-zhi/di-san-jie-ff1a-gc-mo-kuai.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        第三节：gc模块
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六章：魔术方法
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-yi-jie-ff1a-mo-zhu-fang-fa-ff08-yi-ff09.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-yi-jie-ff1a-mo-zhu-fang-fa-ff08-yi-ff09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        第一节：魔术方法（一）——常规魔术方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-er-jie-ff1a-mo-zhu-fang-fa-ff08-er-ff09.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-er-jie-ff1a-mo-zhu-fang-fa-ff08-er-ff09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        第二节：魔术方法（二）——用于比较的魔术方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-san-jie-ff1a-mo-zhu-fang-fa-ff08-san-ff09.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-san-jie-ff1a-mo-zhu-fang-fa-ff08-san-ff09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        第三节：魔术方法（三）——运算符魔术方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-si-jie-ff1a-mo-zhu-fang-fa-ff08-si-ff09-2014-2014-kong-zhi-shu-xing-fang-wen.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-si-jie-ff1a-mo-zhu-fang-fa-ff08-si-ff09-2014-2014-kong-zhi-shu-xing-fang-wen.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        第四节：魔术方法（四）——控制属性访问
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-wu-jie-ff1a-mo-zhu-fang-fa-ff08-wu-ff09-2014-2014-chuang-jian-ding-zhi-de-xu-lie.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-wu-jie-ff1a-mo-zhu-fang-fa-ff08-wu-ff09-2014-2014-chuang-jian-ding-zhi-de-xu-lie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        第五节：魔术方法（五）——创建定制的序列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-liu-jie-ff1a-mo-zhu-fang-fa-ff08-liu-ff09-2014-2014-ke-diao-yong-de-dui-xiang.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-liu-jie-ff1a-mo-zhu-fang-fa-ff08-liu-ff09-2014-2014-ke-diao-yong-de-dui-xiang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        第六节：魔术方法（六）——可调用的对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-qi-jie-ff1a-mo-zhu-fang-fa-ff08-qi-ff09-2014-2014-hui-hua-guan-li.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-qi-jie-ff1a-mo-zhu-fang-fa-ff08-qi-ff09-2014-2014-hui-hua-guan-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        第七节：魔术方法（七）——会话管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-ba-jie-ff1a-mo-zhu-fang-fa-ff08-ba-ff09-2014-2014-cun-chu-dui-xiang.html">
+            
+                
+                    <a href="../di-liu-zhang-ff1a-geng-duo-jin-jie-zhi-shi/di-ba-jie-ff1a-mo-zhu-fang-fa-ff08-ba-ff09-2014-2014-cun-chu-dui-xiang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        第八节：魔术方法（八）——序列化对象
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng.html">
+            
+                
+                    <a href="../di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七章：多任务编程
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-yi-jie-ff1a-jin-cheng.html">
+            
+                
+                    <a href="../di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-yi-jie-ff1a-jin-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        第一节：进程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-er-jie-ff1a-xian-cheng.html">
+            
+                
+                    <a href="../di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-er-jie-ff1a-xian-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        第二节：线程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.3" data-path="di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-san-jie-ff1a-xie-cheng.html">
+            
+                
+                    <a href="../di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-san-jie-ff1a-xie-cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        第三节：协程（待更新）
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >知了课堂Python进阶课程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../di-qi-zhang-ff1a-xian-cheng-3001-jin-cheng-he-xie-cheng/di-er-jie-ff1a-xian-cheng.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 第二节：线程"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
